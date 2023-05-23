@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.d1
+		{
+			height: 100px;
+			width: 100px;
+			background-color: blueviolet;
+			animation-name: demo;
+			position: relative;
+			animation-duration: 1s;
+			top: 20px;
+			left: 20px;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+		}
+		@keyframes demo
+		{
+			0%
+			{
+				top: 20px;
+				left: 20px;
+			}
+			25%
+			{
+				top: 20px;
+				left: 520px;
+				border-radius: 50px;
+				border-color: darkred;
+				transform: rotate(360deg);
+				animation-timing-function: linear;
+			}
+			50%
+			{
+				top: 520px;
+				left: 520px;
+				border-radius: 0px;
+				background-color: darkgrey;
+				transform: rotate(-360deg);
+			}
+			75%
+			{
+				top: 520px;
+				left: 20px;
+				border-radius: 50px;
+				background-color: orange;
+				transform: rotate(360deg);
+			}
+			100%
+			{
+				top: 20px;
+				left: 20px;
+				border-radius: 0px;
+				background-color: orangered;
+				transform: rotate(-360deg);
+			}
+		}
+	</style>
+	<title>ANIMANATION PROPERTY</title>
+</head>
+<body>
+	<div class="d1"></div>
+
+</body>
+</html>
